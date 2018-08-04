@@ -2,7 +2,7 @@
 
 This repository contains the soruce code of my project illustrated in my Medium stories. 
 
-- 
+- [Using URLSession to retrieve JSON in Swift (1) - Getting Started](https://medium.com/p/d929f3a49c67/)
 
 ## Prerequisite 
 
