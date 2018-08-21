@@ -32,17 +32,34 @@ struct Image: Decodable {
     let likes: Int
     let color: String
     let urls: URLs
+    let keyNotExist: String?
 }
 
 if let url = URL.with(string: "photos/random") {
+    var urlRequest = URLRequest(url: url)
+    urlRequest.setValue("Client-ID YOUR_ACCESS_KEY", forHTTPHeaderField: "Authorization")
+
+    URLSession.shared.dataTask(with: urlRequest) { data, response, error in
+        if let data = data {
+            do {
+                let image = try JSONDecoder().decode(Image.self, from: data)
+                print(image)
+            } catch let error {
+                print(error)
+            }
+        }
+    }.resume()
+}
+
+if let url = URL.with(string: "photos/random?count=2") {
     var urlRequest = URLRequest(url: url)
     urlRequest.setValue("Client-ID YOUR_ACCESS_KEY", forHTTPHeaderField: "Authorization")
     
     URLSession.shared.dataTask(with: urlRequest) { data, response, error in
         if let data = data {
             do {
-                let image = try JSONDecoder().decode(Image.self, from: data)
-                print(image)
+                let images = try JSONDecoder().decode([Image].self, from: data)
+                print(images)
             } catch let error {
                 print(error)
             }
