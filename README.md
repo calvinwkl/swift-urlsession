@@ -12,6 +12,16 @@ This repository contains the project illustrated in my Medium stories
 
 - Swift 4.0+
 
+## Demo JSON object
+
+- [foo](https://api.myjson.com/bins/yfua8)
+
+```
+{
+  "foo": "bar"
+}
+```
+
 ## License
 
 Under the MIT License.
