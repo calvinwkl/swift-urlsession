@@ -1,4 +1,9 @@
-//: Playground - noun: a place where people can play
+//: ## Using URLSession to retrieve JSON in Swift
+//:
+//: ### 1. [Getting Started](https://medium.com/p/d929f3a49c67/)
+//:
+//: ### 2. [With Unsplash API](https://medium.com/p/4b9fee472f08/)
+
 
 import UIKit
 import PlaygroundSupport
