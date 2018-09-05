@@ -1,10 +1,8 @@
-//: ## Using URLSession to retrieve JSON in Swift
+//: # Using URLSession to retrieve JSON in Swift
 //:
-//: ### 1. [Getting Started](https://medium.com/p/d929f3a49c67/)
+//: ### [Previous 1. Getting Started](@previous)
 //:
-//: ### 2. [With Unsplash API](https://medium.com/p/4b9fee472f08/)
-
-
+//: ## [2. With Unsplash API](https://medium.com/p/4b9fee472f08/)
 import UIKit
 import PlaygroundSupport
 
@@ -43,7 +41,7 @@ struct Image: Decodable {
 if let url = URL.with(string: "photos/random") {
     var urlRequest = URLRequest(url: url)
     urlRequest.setValue("Client-ID YOUR_ACCESS_KEY", forHTTPHeaderField: "Authorization")
-
+    
     URLSession.shared.dataTask(with: urlRequest) { data, response, error in
         if let data = data {
             do {
@@ -53,7 +51,7 @@ if let url = URL.with(string: "photos/random") {
                 print(error)
             }
         }
-    }.resume()
+        }.resume()
 }
 
 if let url = URL.with(string: "photos/random?count=2") {
@@ -69,5 +67,5 @@ if let url = URL.with(string: "photos/random?count=2") {
                 print(error)
             }
         }
-    }.resume()
+        }.resume()
 }
