@@ -1,4 +1,4 @@
-# Swift URLSession demo ![Swift](http://img.shields.io/badge/swift-4.0-brightgreen.svg)
+# Using URLSession to retrieve JSON in Swift ![Swift](http://img.shields.io/badge/swift-4.0-brightgreen.svg)
 
 This repository contains the code illustrated in my Medium stories
 
