@@ -1,6 +1,6 @@
 # Swift URLSession demo ![Swift](http://img.shields.io/badge/swift-4.0-brightgreen.svg)
 
-This repository contains the project illustrated in my Medium stories
+This repository contains the code illustrated in my Medium stories
 
 - [Using URLSession to retrieve JSON in Swift (1) - Getting Started](https://medium.com/p/d929f3a49c67/)
 
@@ -22,6 +22,6 @@ This repository contains the project illustrated in my Medium stories
 
 ```
 {
-  "foo": "bar"
+  foo: "bar"
 }
 ```
