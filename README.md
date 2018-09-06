@@ -12,7 +12,11 @@ This repository contains the project illustrated in my Medium stories
 
 - Swift 4.0+
 
-## Demo JSON object
+## Playground
+
+![Screenshot](https://github.com/calvinwkl/swift-url-session/blob/master/screenshot.png)
+
+## JSON object
 
 - [foo](https://api.myjson.com/bins/yfua8)
 
@@ -21,8 +25,3 @@ This repository contains the project illustrated in my Medium stories
   "foo": "bar"
 }
 ```
-
-## License
-
-Under the MIT License.
-
